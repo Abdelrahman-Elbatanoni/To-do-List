@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="Style.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <link rel="stylesheet" href="all.min.css">
+    <title>To-Do List App</title>
+</head>
+<body>
+    <div class="container">
+        <h1 >To-Do List</h1>
+        <form id="myForm">
+            <div class="Fill">
+                <input type="text" placeholder="Title (at least 6 letters)" minlength="6" required id="inp_title">
+                <textarea placeholder="Description (at least 20 charachters)" rows="2" required></textarea>
+                <button id="add_btn" class=" add_btn">ADD</button>
+                <button id="update_btn" class="btn-no up_btn">UPDATE</button>
+            </div>
+        </form>
+        
+        <div class="search">
+            <input type="text" id="search" placeholder="Search by title...">
+        </div>
+
+        <section class="Lists">
+            <p id="li_p" class="btn-no">Your List</p>
+            <div id="list">
+            </div>
+        </section>
+    </div>
+</body>
+<script src="ToDo.js"></script>
+</html>
